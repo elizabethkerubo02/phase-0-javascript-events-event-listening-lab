@@ -1,5 +1,7 @@
 
-function addingEventListener(){const input = document.getElementById('button'); 
+function addingEventListener(){
+    
+const input = document.getElementById('button'); 
   
  function clickAlert(){ 
  alert('I was clicked!'); 
@@ -18,12 +20,12 @@ function addingEventListener(){const input = document.getElementById('button');
  } 
    } 
    document.addEventListener("keydown", function (e) { 
-     if (e.key === "ArrowLeft") { 
-       moveDodgerLeft(); 
+  if (e.key === "ArrowLeft") { 
+   moveDodgerLeft(); 
   } 
  }); 
  function moveDodgerRight() { 
-   const rightNumbers = dodger.style.left.replace("px", ""); 
+  const rightNumbers = dodger.style.left.replace("px", ""); 
    const right = parseInt(rightNumbers, 10); 
   
    if (right > 0) { 
